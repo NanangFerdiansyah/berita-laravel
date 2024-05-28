@@ -18,6 +18,7 @@
                 </div>
                 <div class="mt-3">
                     <h6>{{ $post->category->name}}</h6>
+                    <h6 class="small text-muted" >Posted On: {{ $post->created_at->format('d-m-Y') }}</h6>
                 </div>                
 
 
@@ -29,9 +30,12 @@
                             <img src="{{ asset('uploads/post/'.$post->image) }}" alt="Image" class="w-" height="300px">
                         </div>
                         
-                        {!! $post->description !!}
+                        <div style="margin-top: 20px;"> <!-- Menambahkan margin-top -->
+                            {!! $post->description !!}
+                        </div>
                     </div>
                 </div>
+                
 
 
             </div>

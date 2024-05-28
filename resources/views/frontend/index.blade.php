@@ -42,7 +42,7 @@
                         <div class="card-text-container">
                         <p class="card-text text-dark" id="card-text">{!! $all_post_item->description !!}</p>
                          </div>
-                        <a class="btn btn-primary" style="margin-top: 10px; href="{{ url('kategori/'.$all_post_item->category->slug.'/'.$all_post_item->slug) }}">Read more →</a>
+                        <a class="btn btn-primary" style="margin-top: 10px;" href="{{ url('kategori/'.$all_post_item->category->slug.'/'.$all_post_item->slug) }}">Read more →</a>
                     </div>
                 </a>
                 @endif
